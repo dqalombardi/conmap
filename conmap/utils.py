@@ -23,6 +23,8 @@ def load_contact_to_app() -> ContactToAppMap:
     raw_contact_to_app = json.loads(file_content)
     contact_to_app = {contact: MessagingApp.from_value(app_str) for contact, app_str in raw_contact_to_app.items()}
 
+    logger.debug(f"Loaded map ({len(contact_to_app)} keys) from file {CONTACT_TO_APP_JSON}")
+
     return contact_to_app
 
 
