@@ -1,3 +1,5 @@
+"""Module containing ConmapWidget class."""
+
 from kivy.uix.widget import Widget
 
 

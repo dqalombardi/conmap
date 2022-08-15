@@ -1,3 +1,5 @@
+"""Module containing RootLayout class."""
+
 from kivy.uix.boxlayout import BoxLayout
 
 

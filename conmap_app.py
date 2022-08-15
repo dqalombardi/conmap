@@ -1,3 +1,5 @@
+"""Module containing ConmapApp class."""
+
 from kivy.app import App
 
 from root_layout import RootLayout
