@@ -10,11 +10,14 @@ class MessagingApp(Enum):
 
     @classmethod
     def from_value(cls, value: str) -> "MessagingApp":
-        """TODO"""
+        """
+        Returns member of cls with the passed value.
+        Raises ValueError if no such member exists.
+        """
 
-        for app in cls:
-            if app.value == value:
-                return app
+        for member in cls:
+            if member.value == value:
+                return member
 
         raise ValueError(f"There is no member of {cls} with passed value: '{value}'")
 
